@@ -45,7 +45,6 @@ export default function Home() {
         .then(data => {
           console.log('Server response:', data);
           setServerResponse(data); // Update state with server response
-          handleValidation(data);
         })
         .catch(error => {
           console.error('Error sending file:', error);
@@ -99,10 +98,12 @@ export default function Home() {
             justifyContent: 'center',
             minHeight: '100vh',
             backgroundColor: 'white',
+            backgroundImage: 'radial-gradient(lightgray 1px, transparent 1px)',
+            backgroundSize: '30px 30px',
           }}
         >
-          <CircularProgress /> {/* Or any other loading indicator */}
-          <Typography variant="h6" sx={{ mt: 2 }}>
+          <CircularProgress color="inherit" size={20} sx={{color: 'black'}} /> {/* Or any other loading indicator */}
+          <Typography variant="overline" sx={{ mt: 2, color:'black' }}>
             Loading...
           </Typography>
         </Box>
