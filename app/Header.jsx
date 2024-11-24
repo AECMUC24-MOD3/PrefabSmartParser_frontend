@@ -10,10 +10,10 @@ export async function Header() {
         <Stack direction="row" spacing={2}>
 
           <Link href="/" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            Document
+            LangChain
           </Link>
-          <Link href="/three" className="font-small" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            3D model
+          <Link href="/method2" className="font-small" variant="overline" sx={{ color: 'black', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            Assistant
           </Link>
         </Stack>
         <Box sx={{width:'20px',height:'20px',color:'white', border:'2px solid black', borderRadius:'2px'}}/>
